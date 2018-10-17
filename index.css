@@ -1,0 +1,44 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(40, 20px);
+    grid-template-rows: repeat(30, 20px);
+  }
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 15px;
+    height: 15px;
+  }
+
+  .btn-group {
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.redButton {
+    background-color: red; 
+}
+.orangeButton {
+    background-color: orange; 
+}
+.yellowButton {
+    background-color: yellow;
+}
+.greenButton {
+    background-color: green; 
+}
+.skyBlueButton {
+    background-color: skyblue; 
+}
+.blueButton {
+    background-color: blue;
+}
+.purpleButton {
+    background-color: purple; 
+}
+.blackButton {
+    background-color: black;
+}
