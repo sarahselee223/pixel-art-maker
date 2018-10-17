@@ -4,6 +4,12 @@
     grid-template-rows: repeat(30, 20px);
   }
 
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(40, 20px);
+    grid-template-rows: repeat(30, 20px);
+}
+
 .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
     width: 15px;
