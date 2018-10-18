@@ -14,11 +14,25 @@ colorArray.forEach(function(color){
 
 const grid = document.querySelector('.grid-container')
 const cellCount = 1200
+const cells = JSON.parse(localStorage.getItem('cells')|| "{}")
+
 for(let i=0; i<cellCount; i++){
     let div = document.createElement('div')
     div.classList.add("grid-item")
     grid.appendChild(div)
+
+    if (cells[i] !== undefined) {
+        div.classList.add(cells[i]+'Button')
+    }
+
     div.addEventListener('click', function(event){
         event.target.classList.toggle(currentColor+'Button')
+       
+        cells[i] = currentColor
+        
+        localStorage.setItem('cells', JSON.stringify(cells))
     })
 }
+
+
+

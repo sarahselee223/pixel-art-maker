@@ -3,7 +3,7 @@
     grid-template-columns: repeat(40, 20px);
     grid-template-rows: repeat(30, 20px);
   }
-
+  
 .color-container {
     display: grid;
     grid-template-columns: repeat(40, 20px);
