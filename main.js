@@ -1,7 +1,7 @@
 
 let currentColor 
 const colorGrid = document.querySelector('.color-container')
-const colorArray = ['red', 'orange', 'yellow', 'green', 'skyBlue', 'blue', 'purple','black', 'white']
+const colorArray = ['red', 'salmon', 'crimson', 'pink', 'palevioletred', 'coral', 'orangered', 'orange', 'gold', 'yellow', 'lemonchiffon', 'moccasin', 'palegoldenrod', 'khaki', 'darkkhaki','palegreen', 'springgreen', 'mediumseagreen', 'seagreen', 'green', 'olive', 'darkolivegreen', 'darkseagreen', 'lightseagreen', 'darkcyan', 'paleturquoise', 'mediumturquoise', 'cadetblue', 'steelblue', 'skyBlue', 'dodgerblue', 'royalblue', 'blue', 'darkblue', 'midnightblue', 'mediumpurple','purple', 'rebeccapurple', 'darkslateblue','black']
 
 colorArray.forEach(function(color){
     const colorDiv = document.createElement('div')
@@ -13,7 +13,8 @@ colorArray.forEach(function(color){
 }) 
 
 const grid = document.querySelector('.grid-container')
-for(let i=0; i<1200; i++){
+const cellCount = 1200
+for(let i=0; i<cellCount; i++){
     let div = document.createElement('div')
     div.classList.add("grid-item")
     grid.appendChild(div)
@@ -21,4 +22,3 @@ for(let i=0; i<1200; i++){
         event.target.classList.toggle(currentColor+'Button')
     })
 }
-

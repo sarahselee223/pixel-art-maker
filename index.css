@@ -23,6 +23,102 @@
     height: 15px;
     cursor: pointer;
 }
+.salmonButton{
+    background-color: salmon;
+}
+.crimsonButton{
+    background-color: crimson;
+}
+.pinkButton{
+    background-color: pink;
+}
+.palevioletredButton{
+    background-color: palevioletred;
+}
+.coralButton{
+    background-color: coral;
+}
+.orangeredButton{
+    background-color: orangered;
+}
+.goldButton{
+    background-color: gold;
+}
+.lemonchiffonButton{
+    background-color: lemonchiffon;
+}
+.moccasinButton{
+    background-color: moccasin;
+}
+.palegoldenrodButton{
+    background-color: palegoldenrod;
+}
+.khakiButton{
+    background-color: khaki;
+}
+.darkkhakiButton{
+    background-color: darkkhaki;
+}
+.palegreenButton{
+    background-color: palegreen;
+}
+.springgreenButton{
+    background-color: springgreen;
+}
+.mediumseagreenButton{
+    background-color: mediumseagreen;
+}
+.seagreenButton{
+    background-color: seagreen;
+}
+.oliveButton{
+    background-color: olive;
+}
+.darkolivegreenButton{
+    background-color: darkolivegreen;
+}
+.darkseagreenButton{
+    background-color: darkseagreen;
+}
+.lightseagreenButton{
+    background-color: lightseagreen;
+}
+.darkcyanButton{
+    background-color: darkcyan;
+}
+.paleturquoiseButton{
+    background-color: paleturquoise;
+}
+.mediumturquoiseButton{
+    background-color: mediumturquoise;
+}
+.cadetblueButton{
+    background-color: cadetblue;
+}
+.steelblueButton{
+    background-color: steelblue;
+}
+.dodgerblueButton{
+    background-color: dodgerblue;
+}
+.royalblueButton{
+    background-color: royalblue;
+}
+.darkblueButton{
+    background-color: darkblue;
+}
+.midnightblueButton{
+    background-color: midnightblue;
+}
+.rebeccapurpleButton{
+    background-color: rebeccapurple;
+}
+.darkslateblueButton{
+    background-color: darkslateblue;
+}
+.mediumpurpleButton{
+    background-color: mediumpurple;
+}
 
 .redButton {
     background-color: red; 
