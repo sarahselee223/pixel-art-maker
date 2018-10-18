@@ -10,34 +10,41 @@ colorArray.forEach(function(color){
         currentColor = color
     })
     colorGrid.appendChild(colorDiv)
-}) 
+})
 
 const grid = document.querySelector('.grid-container')
-const cellCount = 1200
-const cells = JSON.parse(localStorage.getItem('cells')|| "{}")
 
-for(let i=0; i<cellCount; i++){
-    let div = document.createElement('div')
-    div.classList.add("grid-item")
-    grid.appendChild(div)
 
-    if (cells[i] !== undefined) {
-        div.classList.add(cells[i]+'Button')
-    }
+function createCanvas(){
+    const cells = JSON.parse(localStorage.getItem('cells')) || {}
+    const cellCount = 1200
 
-    div.addEventListener('click', function(event){
-        event.target.classList.toggle(currentColor+'Button')
-        if(event.target.classList.contains(currentColor+'Button')) {
-            cells[i] = currentColor
-        } else {
-            cells[i] = undefined
+    for(let i=0; i<cellCount; i++){
+        let div = document.createElement('div')
+        div.classList.add("grid-item")
+        grid.appendChild(div)
+
+        if (cells[i] !== undefined) {
+            div.classList.add(cells[i]+'Button')
         }
-        
-        localStorage.setItem('cells', JSON.stringify(cells))
-    })
+
+        div.addEventListener('click', function(event){
+            event.target.classList.toggle(currentColor+'Button')
+            if(event.target.classList.contains(currentColor+'Button')) {
+                cells[i] = currentColor
+            } else {
+                cells[i] = undefined
+            }
+            
+            localStorage.setItem('cells', JSON.stringify(cells))
+        })
+    }
 }
+
 function clearRecord(){ 
-    localStorage.clear();
+    localStorage.clear()
+    grid.innerHTML = ""
+    createCanvas()
 }
 
 
