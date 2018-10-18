@@ -11,14 +11,14 @@
 }
 
 .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(68, 68, 68, 0.8);
     width: 15px;
     height: 15px;
   }
 
   .btn-group {
     display: grid;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(68, 68, 68, 0.8);
     width: 15px;
     height: 15px;
     cursor: pointer;
@@ -145,7 +145,7 @@
     background-color: black;
 }
 .button {
-    background-color: #4CAF50;
+    background-color: darkcyan;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -153,5 +153,8 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px 50px 5px 350px;
+    margin: 5px 50px 5px 330px;
+}
+body {
+    background-color: black;
 }
