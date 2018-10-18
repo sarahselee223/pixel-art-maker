@@ -3,11 +3,11 @@
     grid-template-columns: repeat(40, 20px);
     grid-template-rows: repeat(30, 20px);
   }
-  
+
 .color-container {
     display: grid;
     grid-template-columns: repeat(40, 20px);
-    grid-template-rows: repeat(30, 20px);
+    grid-template-rows: repeat(1, 20px);
 }
 
 .grid-item {
@@ -143,4 +143,16 @@
 }
 .blackButton {
     background-color: black;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

@@ -27,12 +27,17 @@ for(let i=0; i<cellCount; i++){
 
     div.addEventListener('click', function(event){
         event.target.classList.toggle(currentColor+'Button')
-       
-        cells[i] = currentColor
+        if(event.target.classList.contains(currentColor+'Button')) {
+            cells[i] = currentColor
+        } else {
+            cells[i] = undefined
+        }
         
         localStorage.setItem('cells', JSON.stringify(cells))
     })
 }
-
+function clearRecord(){ 
+    localStorage.clear();
+}
 
 
